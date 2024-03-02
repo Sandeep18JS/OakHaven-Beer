@@ -14,7 +14,7 @@ export function BeerCan(props) {
   const canRef = useRef(null)
 
   useGSAP(() => {
-    gsap.from(canRef.current.rotation, { x: 5, duration: 1.5 })
+    gsap.from(canRef.current.position, { y: 10, duration: 1.5 })
   }, [])
 
   return (
