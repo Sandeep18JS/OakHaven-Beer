@@ -7,8 +7,8 @@ const Products = ({ products }) => {
         <div className='w-full flex flex-col justify-center items-center mx-auto gap-10 mb-28'>
             <div className='w-full h-[2px] bg-secondary mt-28'></div>
 
-            <h3 className='font-primary text-primary text-[35px] mt-14 mb-8'>Our Beers</h3>
-            <div className='w-4/5 flex overflow-x-hidden  justify-center items-center gap-20' >
+            <h3 className='font-primary text-primary text-[35px] lg:mt-14 mb-8'>Our Beers</h3>
+            <div className='w-full lg:w-4/5 flex flex-col lg:flex-row  overflow-x-hidden  justify-center items-center lg:gap-20' >
                 {products.map((product, index) => (
                     <div key={index} className='flex flex-col justify-center items-center'>
                         <div className='w-[350px] h-[350px]  overflow-x-hidden'>
